@@ -1,7 +1,6 @@
 {
     "C_Cpp.intelliSenseEngine": "disabled",
 
-    "editor.formatOnSave": true,
 
     "[cpp]": {
         "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
@@ -13,6 +12,8 @@
 
     "cmake.generator": "Ninja",
     "cmake.buildBeforeRun": true,
+    "editor.hover.enabled": "on",
+    "editor.hover.delay": 300,
 
     "cmake.buildDirectory": "${workspaceFolder}/build",
 
