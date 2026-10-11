@@ -4,6 +4,8 @@ project(polysolver LANGUAGES CXX)
 
 add_subdirectory(libs/cpu_solver)
 
+add_subdirectory(third_party/FTXUI)
+
 add_executable(polysolver
     src/main.cpp
 )
@@ -16,4 +18,4 @@ target_compile_options(polysolver PRIVATE
     -Wpedantic
 )
 
-target_link_libraries(polysolver PRIVATE cpu_solver)
+target_link_libraries(polysolver PRIVATE cpu_solver ftxui::ftxui)
